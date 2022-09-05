@@ -1,0 +1,126 @@
+@charset "utf-8";
+html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+    }
+    body {
+      transform: perspective(1400px) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+      transform-style: preserve-3d;
+      background-image: none;
+      background-color: rgb(50, 50, 50);
+    }
+    .one {
+      position: absolute;
+      width: 240.5px;
+      height: 104px;
+      top: 310px;
+      left: 481px;
+    }
+    .Two {
+      display: block;
+      height: 20px;
+      position: absolute;
+      width: 100px;
+      left: 8px;
+      top: 5px;
+    }
+    .Three {
+      display: block;
+      height: 20px;
+      position: absolute;
+      width: 100px;
+      top: -20px;
+      left: 9px;
+    }
+    .Four {
+      left: 8px;
+      top: 5px;
+      width: 228px;
+      transform-origin: 116px 13px 0px;
+    }
+    .Five {
+      left: 9px;
+      top: -20px;
+      font-family: Tahoma;
+    }
+    .Six {
+      width: 227px;
+      transform-origin: 115.5px 13px 0px;
+      left: 9px;
+      top: 67px;
+    }
+    .Seven {
+      top: 42px;
+      font-family: Tahoma;
+    }
+    .Eight {
+      position: absolute;
+      width: 512px;
+      height: 128px;
+      transform-origin: 256.004px 64.1667px 0px;
+      top: 108px;
+      left: 350px;
+    }
+    .Nine {
+      background-color: rgb(255, 255, 255);
+      border-color: rgba(255, 108, 2, 0.66);
+      border-radius: 20px;
+      border-image-outset: 0;
+      box-sizing: border-box;
+      display: block;
+      position: absolute;
+      width: 450px;
+      left: -103px;
+      top: -310px;
+      height: 724px;
+      transform-origin: 225px 362px 0px;
+    }
+    .Ten {
+      display: block;
+      height: 27px;
+      position: absolute;
+      width: 241px;
+      transform-origin: 125px 14px 0px;
+      left: 1px;
+      top: 120px;
+    }
+    .Eleven {
+    font-family: Tahoma;
+    font-size: 24px;
+    height: 33px;
+    position: absolute;
+    width: 106px;
+    transform-origin: 937.251px 111.487px 0px;
+    top: 164px;
+    left: 59px;
+    }
+    .Twelve {
+      font-family: Tahoma;
+      font-size: 12px;
+      left: -2px;
+      top: 19px;
+    }
+    .thriteen {
+      font-family: Tahoma;
+      font-size: 24px;
+    }
+    .Fourteen {
+      display: block;
+      position: absolute;
+      height: 88px;
+      background-image: none;
+      width: 349px;
+      transform-origin: 174.5px 43.625px 0px;
+      background-color: transparent;
+      left: 142px;
+      top: 27px;
+    }
+    .Fifteen {
+    position: absolute;
+    width: 107px;
+    height: 107px;
+    transform-origin: 53.6667px 53.6667px 0px;
+    left: 41px;
+    top: 13px;
+    }
