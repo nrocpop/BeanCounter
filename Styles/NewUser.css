@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+*{
+    margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Sen', sans-serif;
+ 
+}
+body{
+     display: flex;
+     height: 100vh;
+     justify-content: center;
+     align-items: center;
+     background: linear-gradient(160deg, #C09D92, #663A30);
+ 
+}
+.holder-box{
+    height: 800px;
+    max-width: 699px;
+    width: 100%;
+    background: #fff;
+    padding: 30px 35px;
+}
+.holder-box .title{
+    font-size: 30px;
+    font-weight: 500;
+    position: relative;
+}
+.components form .user-information{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 30px 0 18px 0;
+}
+
+form .user-information .input-box{
+    margin-bottom:20px;
+    width: calc(100%/2-20px);
+}
+form .input-box span.information{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.user-information .input-box input{
+    height: 50px;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 10px;
+    padding-left: 20px;
+    border-bottom-width: 1px;
+    transition: all 0.3s ease;
+}
+form .components{
+    display: flex;
+    width: 80%;
+    background: #d9d9d9;
+    justify-content: space-between;
+    margin: 14px 0 45px;
+}
+form .components label{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+form .components .dot{
+    height: 18px;
+    width: 18px;
+    background: #d9d9d9;
+    border: 5px solid transparent;
+    margin-right: 10px;
+
+}
+#radio-one :checked ~ .components label  .one,
+#radio-two  :checked ~ .components label .two,
+#radio-three :checked ~ .components label .three{
+    border-color: d9d9d9;
+    background: black;
+}
+form input[type="radio-button"]{
+    display:none;
+}
+
+form .button{
+    margin: 155px 45px;
+    height: 45px;
+}
+form .button label{
+    justify-content: center;
+}
+form .button input{
+    height: 100%;
+    width: 100%;
+    color: black;
+    background-color: #C09D92;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: 'none';
+    border-radius: 5px;
+}
+form .button input::hover{
+    background: black;
+}
+@media (max-width: 584px){
+    .holder-box{
+        max-width: 100%;
+    }
+}
+
+form .components{
+    width: 100%;
+}
+.content form .user-information{
+    max-height: 100px;
+    overflow-y: scroll;
+}
+.user-information::-webkit-scrollbar{
+    width: 5px;
+}
+@media(max-width: 459px){
+    .container .content .components{
+        flex-direction: column;
+    }
+}
