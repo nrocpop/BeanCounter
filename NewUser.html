@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <title> Create New User </title>
+        <link href="styles/NewUser.css" rel="stylesheet" type="text/css">
+        <link href="style.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="holder-box">
+            <div class="title">Create New User</div>
+            <div class="components">
+            <form action="#">
+                <div class="user-information">
+                    <div class="input-box">
+                        <span class="information">First Name</span>
+                        <input type="text" placeholder="Enter your first name" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="information">Last Name</span>
+                        <input type="text" placeholder="Enter your last name" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="information">Date of Birth</span>
+                        <input type="date" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="information">Phone Number</span>
+                        <input type="tel" placeholder="(___) ___-_____" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="information">Street Address</span>
+                        <input type="text" placeholder="Enter your address" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="information">City</span>
+                        <input type="text" placeholder="Enter city" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="information">State</span>
+                        <input type="text" placeholder="Enter state" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="information">ZIP/Postal Code</span>
+                        <input type="text" placeholder="Enter ZIP/Postal code" required>
+                    </div>
+                </div>
+                <div class="account-type">
+                    <input type="radio-button" name="account-type" id="radio-one">
+                    <input type="radio-button" name="account-type" id="radio-two">
+                    <input type="radio-button" name="account-type" id="radio-three">
+                    <span class="account-title">Account Type</span>
+                    <div class="category">
+                        <label for="radio-one">
+                            <span class="radio-one"></span>
+                            <span class="account-type">Administrator</span>
+                        </label>
+                        <label for="radio-two">
+                            <span class="radio-two"></span>
+                            <span class="account-type">Manager</span>
+                        </label>
+                        <label for="radio-three"></label>
+                            <span class="radio-three"></span>
+                            <span class="account-type">Accountant</span>
+                    </div>
+                </div>
+                <div class="button">
+                    <input type="register" value="Register">
+                </div>
+            </form>
+        </div>
+        </div>
+    </body>
+</html>
