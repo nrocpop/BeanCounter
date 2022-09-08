@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+*{
+   margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sen', sans-serif;
+
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center ;
+    align-items: center;
+    background: linear-gradient(135deg, #C09D92, #663A30);
+
+}
+.container{
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+.container .title{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+.container .title{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: #663A30;
+}
+.container form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+form .user-details .input-box{
+    width: calc(100%/2-20px);
+    margin: 20px 0 12px 0;
+}
+.user-details .input-box input{
+    width: 100%;
+    height: 45px;
+    padding-left: 15px;
+}
+.user-details .input-box .details{
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: block;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+    border-color: #663A30;
+}
+form .user-type .user-title{
+    font-size: 20px;
+    font-weight: 500;
+}
+form .userType-details .category{
+    display: flex;
+    width: 80%;
+    background: #d9d9d9;
+    justify-content: space-between;
+    margin: 14px 0;
+}
+form .userTpye-details .category label{
+    display: flex;
+    align-items: center;
+}
+form .userType-details .category .dot{
+    height: 18px;
+    width: 18px;
+    background: #d9d9d9;
+    border: 5px solid transparent;
+    border-radius: 50%;
+    margin-right: 10px;
+
+}
+#rad-one :checked ~ .category label  .one,
+#rad-two  :checked ~ .category label .two{
+    border-color: d9d9d9;
+    background: black;
+}
+form .button{
+    margin: 45px 0;
+    height: 45px;
+}
+form .button input{
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    font-weight: 500;
+    border: 'none';
+}
+
+@media (max-width: 584px){
+    .container{
+        max-width: 100%;
+    }
+}

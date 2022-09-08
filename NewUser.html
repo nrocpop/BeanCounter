@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title> Create New User </title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="styles/NewUser.css" type="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
@@ -12,8 +12,16 @@
             <form action="#">
                 <div class="user-details">
                     <div class="input-box">
-                        <span class="details">Full Name</span>
-                        <input type="text" placeholder="Enter your name" required>
+                        <span class="details">First Name</span>
+                        <input type="text" placeholder="Enter your first name" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Last Name</span>
+                        <input type="text" placeholder="Enter your last name" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Date of Birth</span>
+                        <input type="date" required>
                     </div>
                     <div class="input-box">
                         <span class="details">Phone Number</span>
@@ -39,18 +47,18 @@
                 <div class="userType-details">
                     <span class="user-title">User Type</span>
                     <div class="category">
-                        <label for="rad-one">
-                            <span class="rad-one"></span>
+                        <label for="radio-one">
+                            <span class="radio-one"></span>
                             <span class="account-type">Manager</span>
                         </label>
-                        <label for="rad-2">
-                            <span class="rad-two"></span>
+                        <label for="radio-2">
+                            <span class="radio-two"></span>
                             <span class="account-type">Shift Supervisor</span>
                         </label>
                     </div>
                 </div>
                 <div class="button">
-                    <input type="submit" value="Register">
+                    <input type="register" value="Register">
                 </div>
             </form>
         </div>
