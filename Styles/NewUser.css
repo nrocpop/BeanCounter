@@ -5,103 +5,124 @@
      box-sizing: border-box;
      font-family: 'Sen', sans-serif;
  
- }
- body{
+}
+body{
      display: flex;
      height: 100vh;
-     justify-content: center ;
+     justify-content: center;
      align-items: center;
-     background: linear-gradient(135deg, #C09D92, #663A30);
+     background: #d9d9d9;
  
- }
- .container{
-    max-width: 700px;
-    width: 100%;
-    background: #fff;
-    padding: 25px 30px;
-    border-radius: 5px;
 }
-.container .title{
-    font-size: 25px;
+.holderBox{
+    height: 800px;
+    max-width: 699px;
+    width: 100%;
+    background: linear-gradient(160deg, #C09D92, #663A30);
+    padding: 30px 35px;
+}
+.holderBox .title{
+    font-size: 40px;
     font-weight: 500;
     position: relative;
+    text-align: center;
+    color: white;
 }
-.container .title::before{
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 3px;
-    width: 30px;
-    background: #663A30;
-}
-.container form .user-information{
+.components form .userInformation{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 20px 0 12px 0;
+    margin: 30px 0 18px 0;
 }
-form .user-information .input-box{
+
+form .userInformation .inputBox{
+    margin-bottom:20px;
     width: calc(100%/2-20px);
-    margin: 20px 0 12px 0;
 }
-.user-information .input-box input{
-    width: 100%;
-    height: 45px;
-    padding-left: 15px;
-}
-.user-information .input-box .details{
-    font-weight: 500;
-    margin-bottom: 5px;
+form .inputBox span.information{
     display: block;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color:white;
 }
-.user-information .input-box input:focus,
-.user-information .input-box input:valid{
-    border-color: #663A30;
+.userInformation .inputBox input{
+    height: 50px;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 10px;
+    padding-left: 20px;
+    border-bottom-width: 1px;
+    transition: all 0.3s ease;
 }
-form .user-type .user-title{
+form .accountDeets .accountTitle{
     font-size: 20px;
     font-weight: 500;
+    color: white;
+    margin-left: 250px;
 }
-form .acct-information .category{
-    display: flex;
+form .category{
+    display: block;
     width: 80%;
-    background: #d9d9d9;
-    justify-content: space-between;
     margin: 14px 0;
+    justify-content: space-between;    
 }
-form .acct-information .category label{
+form .category label{
     display: flex;
-    align-items: center;
+    margin: 20px 150px 20px;
+    justify-content: space-between;
+    cursor: pointer;
+    color: white;
+    margin-right: 140px;
 }
-form .acct-information .category .dot{
-    height: 18px;
-    width: 18px;
-    background: #d9d9d9;
-    border: 5px solid transparent;
-    border-radius: 50%;
-    margin-right: 10px;
+form .category label .butt{
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  margin-right: 50px;
+  background: #d9d9d9;
+  border: 5px solid transparent;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+#butt1:checked ~ .category label .one,
+#butt2:checked ~ .category label .two,
+#butt3:checked ~ .category label .three{
+    background: #663A30;
+    color: white;
 
 }
-#rad-one :checked ~ .category label  .one,
-#rad-two  :checked ~ .category label .two{
-    border-color: d9d9d9;
-    background: black;
+form input[type="radio"]{
+    display: none;
+    color: white;
 }
-form .button{
-    margin: 45px 0;
+form .button {
     height: 45px;
 }
 form .button input{
+    display: inline-block;
     height: 100%;
-    width: 100%;
-    color: #fff;
+    width: 200px;
+    color: black;
+    background-color: #C09D92;
+    font-size: 25px;
+    text-align: center;
     font-weight: 500;
-    border: 'none';
+    color: white;
+    margin: 20px 50px 15px;
+    border: none;
 }
 
 @media (max-width: 584px){
-    .container{
+    .holderBox{
         max-width: 100%;
     }
+}
+
+form .components{
+    width: 100%;
+}
+.components form .userInformation{
+    max-height: 900px;
+    overflow-y: visible;
 }
