@@ -1,0 +1,118 @@
+@charset "utf-8";
+html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+    }
+    body {
+      transform: perspective(1400px) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+      transform-style: preserve-3d;
+      background-image: none;
+      background-color: rgb(50, 50, 50);
+    }
+    .LoginFrame {
+      position: absolute;
+      width: 240.5px;
+      height: 104px;
+      top: 310px;
+      left: 481px;
+    }
+    .UnameField {
+      display: block;
+      height: 20px;
+      position: absolute;
+      width: 228px;
+      left: 8px;
+      top: 5px;
+      transform-origin: 116px 13px 0px;
+    }
+    .PasswordLabel {
+      display: block;
+      height: 20px;
+      position: absolute;
+      width: 100px;
+      left: 9px;
+      top: 42px;
+      font-family: Tahoma;
+    }
+    .UsernameLabel {
+      display: block;
+      height: 20px;
+      position: absolute;
+      width: 100px;
+      left: 9px;
+      top: -20px;
+      font-family: Tahoma;
+    }
+    .PwordField {
+      display: block;
+      height: 20px;
+      position: absolute;
+      width: 228px;
+      left: 8px;
+      top: 5px;
+      width: 228px;
+      transform-origin: 115.5px 13px 0px;
+      left: 9px;
+      top: 67px;
+    }
+    .LogoPosition {
+      position: absolute;
+      width: 512px;
+      height: 128px;
+      transform-origin: 256.004px 64.1667px 0px;
+      top: 108px;
+      left: 350px;
+    }
+    .Rectangle {
+      background-color: rgb(255, 255, 255);
+      border-color: rgba(255, 108, 2, 0.66);
+      border-radius: 20px;
+      border-image-outset: 0;
+      box-sizing: border-box;
+      display: block;
+      position: absolute;
+      width: 450px;
+      left: -103px;
+      top: -310px;
+      height: 724px;
+      transform-origin: 225px 362px 0px;
+    }
+    .LoginButton {
+      display: block;
+      height: 27px;
+      position: absolute;
+      width: 241px;
+      transform-origin: 125px 14px 0px;
+      left: 1px;
+      top: 120px;
+    }
+    .NewUserLink {
+    font-family: Tahoma;
+    font-size: 12px;
+    height: 124px;
+    position: absolute;
+    width: 144px;
+    transform-origin: 1024.251px 120.487px 0px;
+    top: 165px;
+    left: 70px;
+    }
+    .CompanyName {
+    display: block;
+    position: absolute;
+    height: 66px;
+    background-image: none;
+    width: 296px;
+    transform-origin: 174.5px 43.625px 0px;
+    background-color: transparent;
+    left: 167px;
+    top: 39px;
+    }
+    .CompanyLogo {
+    position: absolute;
+    width: 107px;
+    height: 107px;
+    transform-origin: 53.6667px 53.6667px 0px;
+    left: 41px;
+    top: 13px;
+    }
