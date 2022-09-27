@@ -3,29 +3,27 @@ import styles from "./Styles/SignIn.module.css";
 import {BrowserRouter,Route,Link} from "react-router-dom";
 
 
-function  Home() {return(
+function  Home() {
+  const[Username,setUserName] = React.useState();
+  const[Password,setPassword] = React.useState();
+  
+  return(
     <>
-
     <div class={styles.LoginFrame}>
-      
-    
     <svg data-gwd-shape="rectangle" class={styles.Rectangle}></svg>
     <div>
     
     <label id="UsernameLabel" class={styles.UsernameLabel}>Username</label>
-    <input type="text" id="UsernameField" class={styles.UnameField} label="Username"/>
+    <input type="text" id="UsernameField" class={styles.UnameField} label="Username" onChange={e => setUserName(e.target.value)}/>
     </div>
     <div>
     <label id="PasswordFieldLabel" class={styles.PasswordLabel} for="PasswordField">Password</label>
-    <input type="password" id="PasswordField" class={styles.PwordField} label="Password"/>
+    <input type="password" id="PasswordField" class={styles.PwordField} label="Password" onChange={e => setPassword(e.target.value)}/>
     </div>
     <button class={styles.LoginButton} id="LogInButton">Log In</button>
     <div>
     <li class={styles.NewUserLink}> <Link to="/NewUser">Register New User</Link></li>
-    </div>
-    
-    
-    
+    </div> 
   </div>
 
   <div class={styles.LogoPosition} id="Welcome">
