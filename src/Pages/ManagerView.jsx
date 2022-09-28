@@ -1,8 +1,8 @@
-export default function AdminView(){
+export default function ManagerView(){
 
 
     return (
-        <h1>ADMIN VIEW</h1>
+        <h1>MANAGER VIEW</h1>
     )
 
 }

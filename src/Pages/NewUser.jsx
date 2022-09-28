@@ -1,44 +1,43 @@
 import React,{useState}from 'react'
 import styles from "./Styles/NewUser.module.css"
-
 import {Auth} from 'aws-amplify'
-import { useState } from "react"
 
 
-async function signUp(){
-    try{
-            const {user} = await Auth.signUp({
-                username,
-                password,
-                attributes:{
-                    address,
-                    phone_number,
-                    given_name,
-                    family_name,
-                    email,
-                    birthdate,
-                },
-                autoSignIn:{
-                    enabled: false,
-                }
+//    async function signUp(){
+//     try{
+//             const {user} = await Auth.signUp({
+//                 username,
+//                 password,
+//                 attributes:{
+//                     address,
+//                     phone_number,
+//                     given_name,
+//                     family_name,
+//                     email,
+//                     birthdate,
+//                 },
+//                 autoSignIn:{
+//                     enabled: false,
+//                 }
 
-            });
-            console.log(user);
-        }
-    catch(err){
-        console.log('error signing up',err);
-    }
+//             });
+//             console.log(user);
+//         }
+//     catch(err){
+//         console.log('error signing up',err);
+//     }
+// }
 
-}
-function  NewUser() {
+
+export default function  NewUser() {
     
-   const [firstName,setFirstName] = useState();
-   const [lastName,setLastname] = useState();
-   const [dob,setDob] = useState();
-   const [phone,setPhone] = useState();
-   const [address,SetAddress] = useState();
-   const [acctType,setAcctType] = useState();
-
+    const [firstName,setFirstName] = useState();
+    const [lastName,setLastname] = useState();
+    const [dob,setDob] = useState();
+    const [phone,setPhone] = useState();
+    const [address,SetAddress] = useState();
+    const [acctType,setAcctType] = useState();
+ 
     return(
 
     <div class={styles.holderBox}>
@@ -106,5 +105,5 @@ function  NewUser() {
             
         </div>)
         ;}
+    
 
-export default NewUser;

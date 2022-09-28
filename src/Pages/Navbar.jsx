@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route, Link } from "react-router-dom";
+import ManagerView from './ManagerView'
 
 function Navbar() {
   return (
@@ -13,6 +14,15 @@ function Navbar() {
         </li>
         <li>
           <Link to="/SignIn">SignIn</Link>
+        </li>
+        <li>
+          <Link to="/AdminView">admin</Link>
+        </li>
+        <li>
+          <Link to="/AccountantView">accountant</Link>
+        </li>
+        <li>
+          <Link to="/ManagerView">manager</Link>
         </li>
       </ul>
     </nav>
