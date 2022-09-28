@@ -86,7 +86,7 @@ body{
 
 #butt1:checked ~ .category label .one,
 #butt2:checked ~ .category label .two,
-#butt3:checked ~ .category label .button3{
+#butt3:checked ~ .category label .three{
     background: #5BA698;
 }
 input[type="radio"]{
