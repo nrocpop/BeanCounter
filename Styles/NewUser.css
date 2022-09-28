@@ -11,7 +11,7 @@ body{
      height: 100vh;
      justify-content: center;
      align-items: center;
-     background:  linear-gradient(160deg, #CEF2E8, #5BA698);
+     background: linear-gradient(160deg, #CEF2E8, #5BA698);
  
 }
 .holderBox{
@@ -81,7 +81,7 @@ form .category label .butt{
   margin-right: 50px;
   background: #d9d9d9;
   border: 5px solid transparent;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease;;
 }
 
 #butt1:checked ~ .category label .one,
@@ -91,6 +91,7 @@ form .category label .butt{
 }
 form input[type="radio"]{
     display: none;
+    color: #594F4F;
 }
 form .button {
     height: 45px;
@@ -99,11 +100,12 @@ form .button input{
     display: inline-block;
     height: 100%;
     width: 200px;
-    background-color: #594F4F;
+    color: black;
+    background-color: #CEF2E8;
     font-size: 25px;
     text-align: center;
     font-weight: 500;
-    color: #f2f2f2;
+    color: #594F4F;
     margin: 20px 50px 15px;
     border: none;
 }
@@ -120,4 +122,10 @@ form .components{
 .components form .userInformation{
     max-height: 900px;
     overflow-y: visible;
+}
+
+form .logo{
+    position: fixed;
+    top: 100px;
+    left: 100px;
 }

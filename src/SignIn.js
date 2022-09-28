@@ -2,7 +2,7 @@
 import react ,{useState} from "react";
 import reactDOM from "reactDOM";
 
-function Hello(){
+function Login(){
     alert("Hello There");
 }
 
