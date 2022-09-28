@@ -1,3 +1,4 @@
+
 import React from 'react'
 import styles from "./Styles/NewUser.module.css"
 
@@ -42,28 +43,29 @@ function  NewUser() {return(
                         <input type="text" placeholder="Enter ZIP/Postal code" required/>
                         </div>
                     </div>
-                <div class={styles.accountType}>
-                    <input type="radio" name="accountType" id="butt1"/>
-                    <input type="radio" name="accountType" id="butt2"/>
-                    <input type="radio" name="accountType" id="butt3"/>
-                    <span class="styles.accountTitle">Account Type</span>
+                <div class={styles.accountDetails}>
+                    <input type="radio" name="accountType" id={styles.butt1}/>
+                    <input type="radio" name="accountType" id={styles.butt2}/>
+                    <input type="radio" name="accountType" id={styles.butt3}/>
+                    <span class={styles.accountTitle}>Account Type</span>
                     <div class={styles.category}>
-                        <label for="butt1">
+                        <label htmlFor={styles.butt1}>
                             <span class={styles.butt}></span>
                             <span class={styles.accountType}>Administrator</span>
                         </label>
-                        <label for="styles.butt2">
+                        <label for={styles.butt2}>
                             <span class={styles.butt}></span>
                             <span class={styles.accountType}>Manager</span>
                         </label>
-                        <label for="butt3"></label>
-                            <span class="styles.but one"></span>
+                        <label htmlFor={styles.butt3}>
+                            <span class={styles.butt}></span>
                             <span class={styles.accountType}>Accountant</span>
+                        </label>
                     </div>
                 </div>
-                <div class="styles.button">
-                    <input type="button" value="Cancel" />
-                    <input type="button" value="Submit"/>
+                <div class={styles.button}>
+                    <input type={styles.button}value="Cancel" />
+                    <input type={styles.button} value="Submit"/>
                 </div>
             </div>
             
