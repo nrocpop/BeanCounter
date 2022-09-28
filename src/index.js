@@ -6,6 +6,9 @@ import NewUser from './Pages/NewUser';
 import Test from './Pages/Testing';
 import Layout from './Pages/Layout';
 import NoPage from './Pages/NoPageError';
+import {Amplify,Auth} from 'aws-amplify'
+import aswconfig from './aws-exports'
+Amplify.configure(aswconfig)
 
 
 export default function App() {

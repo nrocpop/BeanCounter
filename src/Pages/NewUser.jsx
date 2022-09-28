@@ -1,10 +1,48 @@
-import React from 'react'
+import React,{useState}from 'react'
 import styles from "./Styles/NewUser.module.css"
 
-function  NewUser() {return(
+import {Auth} from 'aws-amplify'
+import { useState } from "react"
+
+
+async function signUp(){
+    try{
+            const {user} = await Auth.signUp({
+                username,
+                password,
+                attributes:{
+                    address,
+                    phone_number,
+                    given_name,
+                    family_name,
+                    email,
+                    birthdate,
+                },
+                autoSignIn:{
+                    enabled: false,
+                }
+
+            });
+            console.log(user);
+        }
+    catch(err){
+        console.log('error signing up',err);
+    }
+
+}
+function  NewUser() {
+    
+   const [firstName,setFirstName] = useState();
+   const [lastName,setLastname] = useState();
+   const [dob,setDob] = useState();
+   const [phone,setPhone] = useState();
+   const [address,SetAddress] = useState();
+   const [acctType,setAcctType] = useState();
+
+    return(
 
     <div class={styles.holderBox}>
-        <div class={styles.title}>Crrrrrrrreeeeeeeeeeeeer</div>
+        <div class={styles.title}></div>
             <div className = {styles.components}>
             
                 <form action="#"/>
