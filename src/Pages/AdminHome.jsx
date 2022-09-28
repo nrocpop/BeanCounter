@@ -1,11 +1,11 @@
 import React from 'react'
-import styles from "./Styles/AdminHome.css"
+import styles from ".Styles/AdminHome.css"
 
 function  AdminHome() {return(
     <div class={styles.holderBox}>
         <div class={styles.createUserBox}>
             <span class={styles.boxTitle}>Create New User</span>
-            <iframe src="Pages/NewUser.jsx"></iframe>
+            <iframe src="C:\Users\savmc\Documents\GitHub\BeanCounter\src\Pages\NewUser.jsx"></iframe>
         </div>
         <div class={styles.usersBox}>
             <span class={styles.boxTitle}>Active Users</span>
@@ -23,3 +23,4 @@ function  AdminHome() {return(
 </div>)
 
 ;}
+export default AdminHome;

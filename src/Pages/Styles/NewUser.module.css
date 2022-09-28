@@ -84,7 +84,7 @@ body{
   transition: all 0.3s ease;
 }
 
-#butt1:checked ~ .category label .butt,
+#butt1:checked ~ .category label .one,
 #butt2:checked ~ .category label .two,
 #butt3:checked ~ .category label .button3{
     background: #5BA698;

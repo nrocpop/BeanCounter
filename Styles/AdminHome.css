@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sen', sans-serif;
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(160deg, #CEF2E8, #5BA698);
+}
+
+ .createUserBox{
+    margin: 150px 20px 0px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 15px;
+    border: 1px;
+    flex-wrap: wrap;
+    height: 700px;
+    width: 508px;
+    background: #5BA698;
+}
+
+.createUserWindow{
+    position:absolute;
+    margin: 125px -360px -500px;
+    border: 1px;
+}
+.viewUserWindow{
+    position:absolute;
+    margin: 125px -310px 250px;
+    border: 1px;
+}
+.viewReportsWindow{
+    position:absolute;
+    margin: 125px -260px -500px;
+    border: 1px;
+}
+
+.containerBox span.boxTitle{
+    display: inline-block;
+    font-weight: 500px;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+} 
+ .containerBox span.containerTitle{
+    margin-top: 100px;
+    margin: 140px 0 100px;
+    color: #594F4F;
+    font-weight: 1000px;
+    font-size: 45px;
+    text-align: center;
+    justify-content: center;
+}
+
+.usersBox{
+    margin: -700px 625px 0px;
+    border-radius: 15px;
+    border: 1px;
+    flex-wrap: wrap;
+    height: 700px;
+    width: 508px;
+    background: #5BA698;
+    text-align: center;
+}
+.reportsBox{
+    margin: -700px 1200px 0px;
+    border-radius: 15px;
+    border: 1px;
+    flex-wrap: wrap;
+    height: 700px;
+    width: 508px;
+    background: #5BA698;
+    text-align: center;
+}
+
+.navBar{
+    position: absolute;
+    /* float:left; */
+    margin: -1500px -1800px 100px; 
+    height: 200px;
+    width: 100%;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 40px;
+    color:#594F4F;
+    background-color: #f2f2f2;
+}
+.navBar a:hover{
+    background-color: #ddd;
+    color: #594F4F;
+}
+.navBar a.active{
+    background-color: #5BA698;
+    color: white;
+}
+.navBar .profilePic{
+    position:fixed;
+    margin: -50px 2450px 100px;
+
+}
+.navBar .logoPic{
+    position:absolute;
+    margin: -60px 40px 00px;
+}
+.navBar .navPic{
+    position:absolute;
+    z-index: -10;
+    margin: -2427px -100px -1000px;
+    opacity: .7;
+}
+.containerBox{
+    /* margin: 14px 00px 100px; */
+    /* align-items: center; */
+    height:1000px;
+    max-width: 1800px;
+    width: 1800px;
+    background: #f2f2f2;
+    padding: 30px 35px 30px;
+    /* justify-content: center; */
+}
