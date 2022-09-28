@@ -11,14 +11,14 @@ body{
      height: 100vh;
      justify-content: center;
      align-items: center;
-     background: #d9d9d9;
+     background: linear-gradient(160deg, #CEF2E8, #5BA698);
  
 }
 .holderBox{
     height: 800px;
     max-width: 699px;
     width: 100%;
-    background: linear-gradient(160deg, #C09D92, #663A30);
+    background: #f2f2f2;
     padding: 30px 35px;
 }
 .holderBox .title{
@@ -26,7 +26,7 @@ body{
     font-weight: 500;
     position: relative;
     text-align: center;
-    color: white;
+    color: #594F4F;
 }
 .components form .userInformation{
     display: flex;
@@ -43,7 +43,7 @@ form .inputBox span.information{
     display: block;
     font-weight: 500;
     margin-bottom: 10px;
-    color:white;
+    color:#594F4F;
 }
 .userInformation .inputBox input{
     height: 50px;
@@ -57,7 +57,7 @@ form .inputBox span.information{
 form .accountDeets .accountTitle{
     font-size: 20px;
     font-weight: 500;
-    color: white;
+    color: #594F4F;
     margin-left: 250px;
 }
 form .category{
@@ -71,7 +71,7 @@ form .category label{
     margin: 20px 150px 20px;
     justify-content: space-between;
     cursor: pointer;
-    color: white;
+    color: #594F4F;
     margin-right: 140px;
 }
 form .category label .butt{
@@ -81,20 +81,17 @@ form .category label .butt{
   margin-right: 50px;
   background: #d9d9d9;
   border: 5px solid transparent;
-  transition: all 0.3s ease;
-  color: white;
+  transition: all 0.3s ease;;
 }
 
 #butt1:checked ~ .category label .one,
 #butt2:checked ~ .category label .two,
 #butt3:checked ~ .category label .three{
-    background: #663A30;
-    color: white;
-
+    background: #5BA698;
 }
 form input[type="radio"]{
     display: none;
-    color: white;
+    color: #594F4F;
 }
 form .button {
     height: 45px;
@@ -104,11 +101,11 @@ form .button input{
     height: 100%;
     width: 200px;
     color: black;
-    background-color: #C09D92;
+    background-color: #CEF2E8;
     font-size: 25px;
     text-align: center;
     font-weight: 500;
-    color: white;
+    color: #594F4F;
     margin: 20px 50px 15px;
     border: none;
 }
@@ -125,4 +122,10 @@ form .components{
 .components form .userInformation{
     max-height: 900px;
     overflow-y: visible;
+}
+
+form .logo{
+    position: fixed;
+    top: 100px;
+    left: 100px;
 }
