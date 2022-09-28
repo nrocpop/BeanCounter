@@ -11,19 +11,22 @@ function  Home() {
     <>
     <div class={styles.LoginFrame}>
     <svg data-gwd-shape="rectangle" class={styles.Rectangle}></svg>
-    <div>
     
+    <form>
     <label id="UsernameLabel" class={styles.UsernameLabel}>Username</label>
-    <input type="text" id="UsernameField" class={styles.UnameField} label="Username" onChange={e => setUserName(e.target.value)}/>
-    </div>
-    <div>
+    <input type="text" id="UsernameField" class={styles.UnameField} label="Username"/>
+    
+    
     <label id="PasswordFieldLabel" class={styles.PasswordLabel} for="PasswordField">Password</label>
-    <input type="password" id="PasswordField" class={styles.PwordField} label="Password" onChange={e => setPassword(e.target.value)}/>
-    </div>
+    <input type="password" id="PasswordField" class={styles.PwordField} label="Password"/>
+    
     <button class={styles.LoginButton} id="LogInButton">Log In</button>
-    <div>
+    
     <li class={styles.NewUserLink}> <Link to="/NewUser">Register New User</Link></li>
-    </div> 
+   
+    </form>
+    
+    
   </div>
 
   <div class={styles.LogoPosition} id="Welcome">
@@ -35,6 +38,3 @@ function  Home() {
 
 </>
 );}
-
-
-export default Home;
