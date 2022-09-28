@@ -11,9 +11,9 @@ import { useState } from 'react';
 export default function App() {
   const [token,setToken] = useState();
 
-   if(!token){
-     return <Home setToken={setToken}></Home>
-   }
+  //  if(!token){
+  //    return <Home setToken={setToken}></Home>
+  //  }
   
     return (
       <BrowserRouter>
