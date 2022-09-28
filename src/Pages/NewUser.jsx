@@ -43,26 +43,27 @@ function  NewUser() {return(
                         </div>
                     </div>
                 <div class={styles.accountType}>
-                    <input type="radio" name="account-type" id="radio-one"/>
-                    <input type="radio" name="account-type" id="radio-two"/>
-                    <input type="radio" name="account-type" id="radio-three"/>
-                    <span class="styles.account-title">Account Type</span>
+                    <input type="radio" name="accountType" id="butt1"/>
+                    <input type="radio" name="accountType" id="butt2"/>
+                    <input type="radio" name="accountType" id="butt3"/>
+                    <span class="styles.accountTitle">Account Type</span>
                     <div class={styles.category}>
-                        <label for="radio-one">
-                            <span class="styles.radio-one"></span>
-                            <span class="styles.account-type">Administrator</span>
+                        <label for="butt1">
+                            <span class={"styles.butt one"}></span>
+                            <span class={"styles.accountType"}>Administrator</span>
                         </label>
-                        <label for="styles.radio-two">
-                            <span class="styles.radio-two"></span>
-                            <span class="styles.account-type">Manager</span>
+                        <label for="styles.butt2">
+                            <span class={"styles.butt two"}></span>
+                            <span class={styles.accountType}>Manager</span>
                         </label>
-                        <label for="radio-three"></label>
-                            <span class="styles.radio-three"></span>
-                            <span class="styles.account-type">Accountant</span>
+                        <label for="butt3"></label>
+                            <span class="styles.butt three"></span>
+                            <span class="styles.accountType">Accountant</span>
                     </div>
                 </div>
                 <div class="styles.button">
-                    <input type="button" value="Register"/>
+                    <input type="button" value="Cancel" />
+                    <input type="button" value="Submit"/>
                 </div>
             </div>
             
